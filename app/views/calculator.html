@@ -1,0 +1,62 @@
+<div class="alert alert-info">
+
+    <form>
+        <label>Num 1:</label><input type="text"
+                                    ng-model="m.text"
+                                    placeholder="0"
+                                    class="input-medium"/>
+
+        <button class="btn btn-danger" data-ng-click="calc()">Calculate</button>
+        <div class="alert-block">
+        <span class="row-fluid">
+        <span class="span3">
+        <button type="button" ng-click="append(1)" class="btn btn-primary">1</button>
+        <button type="button" ng-click="append(2)" class="btn btn-primary">2</button>
+        <button type="button" ng-click="append(3)" class="btn btn-primary">3</button>
+        </span>
+        </span>
+        </div>
+        <div class="alert-block">
+        <span class="row-fluid">
+        <span class="span3">
+        <button type="button" ng-click="append(4)" class="btn btn-primary">4</button>
+        <button type="button" ng-click="append(5)" class="btn btn-primary">5</button>
+        <button type="button" ng-click="append(6)" class="btn btn-primary">6</button>
+        </span>
+        </span>
+        </div>
+        <div class="alert-block">
+        <span class="row-fluid">
+        <span class="span3">
+        <button type="button" ng-click="append(7)" class="btn btn-primary">7</button>
+        <button type="button" ng-click="append(8)" class="btn btn-primary">8</button>
+        <button type="button" ng-click="append(9)" class="btn btn-primary">9</button>
+        </span>
+        </span>
+        </div>
+
+        <div class="alert-block">
+        <span class="row-fluid">
+        <span class="span3">
+        <button type="button" ng-click="plus()" class="btn btn-primary">+</button>
+        <button type="button" ng-click="append(0)" class="btn btn-primary">0</button>
+        <button type="button" ng-click="minus()" class="btn btn-primary">-</button>
+        </span>
+        </span>
+        </div>
+
+        <div class="alert-block">
+        <span class="row-fluid">
+        <span class="span3">
+        <button type="button" ng-click="multiply()" class="btn btn-primary">x</button>
+        <button type="button" ng-click="divide()" class="btn btn-primary">/</button>
+        <button type="button" ng-click="decimal()" class="btn btn-primary">.</button>
+        </span>
+        </span>
+        </div>
+
+        <div>Result is: {{m.equation}}</div>
+    </form>
+
+
+</div>
